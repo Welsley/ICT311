@@ -1,0 +1,189 @@
+\hypertarget{class_s_f_m_l___input}{\section{S\-F\-M\-L\-\_\-\-Input Class Reference}
+\label{class_s_f_m_l___input}\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}}
+}
+
+
+The Facade of the input portion of S\-F\-M\-L.  
+
+
+
+
+{\ttfamily \#include $<$S\-F\-M\-L\-\_\-\-Input.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_s_f_m_l___input_a502a178db8476cee4885c8ca98942840}{is\-Pressed} (Keyboard\-::\-Key key)
+\begin{DoxyCompactList}\small\item\em checks if a key from th keyboard is pressed \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_f_m_l___input_a070bf3a2362b9e0ac9288e3c06e474b0}{is\-Pressed} (Mouse\-::\-Button but)
+\begin{DoxyCompactList}\small\item\em Check if a mouse button is pressed. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___input_a30d660f643a41aa76689ba5f89d459a3}{lock\-Mouse} ()
+\begin{DoxyCompactList}\small\item\em Lock the mouse to the position specified by the \hyperlink{class_s_f_m_l___input_a06a45c6f02890f93854f57b3ed2656a8}{set\-Mouse(int x,int y)} function. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___input_aa4b918ee8382dbf7f2fdf1f67032505b}{Release\-Mouse} ()
+\begin{DoxyCompactList}\small\item\em release the mouse from its lock \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___input_a06a45c6f02890f93854f57b3ed2656a8}{set\-Mouse} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Set the mouse position for when it is being locked. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___input_ade915afa1193ecdb6fbcfc9ccef3924e}{get\-Mouse} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em Get the mouse position. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___input_a665ba41b07ca93fb6b81354762e5e619}{get\-Mouse\-Vec} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em Returns the difference be. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___input_a7f7c0aa12051cacb00a502fd575abb00}{mouse\-Update} ()
+\begin{DoxyCompactList}\small\item\em Should be called every itteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Facade of the input portion of S\-F\-M\-L. 
+
+This is the sperate facade for inputs only \begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+This facade provides both keyboard inputs and mouse, controller support would be something to look to add in the future. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_f_m_l___input_ade915afa1193ecdb6fbcfc9ccef3924e}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!get\-Mouse@{get\-Mouse}}
+\index{get\-Mouse@{get\-Mouse}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{get\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Input\-::get\-Mouse (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_ade915afa1193ecdb6fbcfc9ccef3924e}
+
+
+Get the mouse position. 
+
+Gets the current position of the mouse on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int passed in and the x value is asssigned to it \\
+\hline
+{\em y} & int passed in and the y value is asssigned to it \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_f_m_l___input_a665ba41b07ca93fb6b81354762e5e619}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!get\-Mouse\-Vec@{get\-Mouse\-Vec}}
+\index{get\-Mouse\-Vec@{get\-Mouse\-Vec}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{get\-Mouse\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Input\-::get\-Mouse\-Vec (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_a665ba41b07ca93fb6b81354762e5e619}
+
+
+Returns the difference be. 
+
+\mbox{[}long description\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \mbox{[}description\mbox{]} \\
+\hline
+{\em y} & \mbox{[}description\mbox{]} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_f_m_l___input_a502a178db8476cee4885c8ca98942840}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!is\-Pressed@{is\-Pressed}}
+\index{is\-Pressed@{is\-Pressed}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{is\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-M\-L\-\_\-\-Input\-::is\-Pressed (
+\begin{DoxyParamCaption}
+\item[{Keyboard\-::\-Key}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_a502a178db8476cee4885c8ca98942840}
+
+
+checks if a key from th keyboard is pressed 
+
+An enum is taken in representing the key input to check and a boolean is returned if that key is being pressed
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & An enum representing the keys on a keyboard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if it is pressed or not 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___input_a070bf3a2362b9e0ac9288e3c06e474b0}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!is\-Pressed@{is\-Pressed}}
+\index{is\-Pressed@{is\-Pressed}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{is\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-M\-L\-\_\-\-Input\-::is\-Pressed (
+\begin{DoxyParamCaption}
+\item[{Mouse\-::\-Button}]{but}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_a070bf3a2362b9e0ac9288e3c06e474b0}
+
+
+Check if a mouse button is pressed. 
+
+Check if a mouse button is pressed has support for 5 mouse buttons
+
+
+\begin{DoxyParams}{Parameters}
+{\em but} & an enum representing the buttons on a mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if it is pressed or not 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___input_a30d660f643a41aa76689ba5f89d459a3}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!lock\-Mouse@{lock\-Mouse}}
+\index{lock\-Mouse@{lock\-Mouse}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{lock\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Input\-::lock\-Mouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_a30d660f643a41aa76689ba5f89d459a3}
+
+
+Lock the mouse to the position specified by the \hyperlink{class_s_f_m_l___input_a06a45c6f02890f93854f57b3ed2656a8}{set\-Mouse(int x,int y)} function. 
+
+sets the mouse back to a position specifiec by the client, default is given 0,0 \hypertarget{class_s_f_m_l___input_a7f7c0aa12051cacb00a502fd575abb00}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!mouse\-Update@{mouse\-Update}}
+\index{mouse\-Update@{mouse\-Update}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{mouse\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Input\-::mouse\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_a7f7c0aa12051cacb00a502fd575abb00}
+
+
+Should be called every itteration. 
+
+This function keeps the mouse position in check so when the mouse vector function is called it can properly tell you the movement \hypertarget{class_s_f_m_l___input_aa4b918ee8382dbf7f2fdf1f67032505b}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!Release\-Mouse@{Release\-Mouse}}
+\index{Release\-Mouse@{Release\-Mouse}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{Release\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Input\-::\-Release\-Mouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_aa4b918ee8382dbf7f2fdf1f67032505b}
+
+
+release the mouse from its lock 
+
+Stops the mouse from being locked \hypertarget{class_s_f_m_l___input_a06a45c6f02890f93854f57b3ed2656a8}{\index{S\-F\-M\-L\-\_\-\-Input@{S\-F\-M\-L\-\_\-\-Input}!set\-Mouse@{set\-Mouse}}
+\index{set\-Mouse@{set\-Mouse}!SFML_Input@{S\-F\-M\-L\-\_\-\-Input}}
+\subsubsection[{set\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Input\-::set\-Mouse (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___input_a06a45c6f02890f93854f57b3ed2656a8}
+
+
+Set the mouse position for when it is being locked. 
+
+Sets the mouse to the position when lock\-Nouse() called
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int, Rrepresenting a position on screen \\
+\hline
+{\em y} & int, Represengint a position on screen \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/S\-F\-M\-L\-\_\-\-Input.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/S\-F\-M\-L\-\_\-\-Input.\-cpp\end{DoxyCompactItemize}

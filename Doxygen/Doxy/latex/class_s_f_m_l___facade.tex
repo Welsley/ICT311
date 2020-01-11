@@ -1,0 +1,240 @@
+\hypertarget{class_s_f_m_l___facade}{\section{S\-F\-M\-L\-\_\-\-Facade Class Reference}
+\label{class_s_f_m_l___facade}\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+}
+
+
+The Facade of S\-F\-M\-L.  
+
+
+
+
+{\ttfamily \#include $<$S\-F\-M\-L\-\_\-\-Facade.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_s_f_m_l___facade_a6a7b88dd503f64f62fd92640981eccc9}{win\-\_\-\-Create} (int width, int height, std\-::string name)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{class_window}{Window}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_f_m_l___facade_ac698020c6dc577e2c3b7d9b226bd6f52}{win\-\_\-active} ()
+\begin{DoxyCompactList}\small\item\em Set the window as the active open\-G\-L context. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___facade_adc4c6ebbd7fa6a1b59dd55cdf2d13b56}{win\-\_\-display} ()
+\begin{DoxyCompactList}\small\item\em Display all the draws between the previous render the the current one. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_f_m_l___facade_a74825fe2634276a08d085c20873ad3ab}{win\-\_\-get\-Width} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{class_window}{Window} Width. \end{DoxyCompactList}\item 
+int \hyperlink{class_s_f_m_l___facade_ac75771d37a899ee7a998320591f42b87}{win\-\_\-get\-Height} ()
+\begin{DoxyCompactList}\small\item\em Get the Height of the window. \end{DoxyCompactList}\item 
+sf\-::\-Window $\ast$ \hyperlink{class_s_f_m_l___facade_a09e484b954d3b6a1a1590860f80e022b}{get\-Event} ()
+\begin{DoxyCompactList}\small\item\em returns the event log from sfml \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___facade_a1ba95a94ef28178eef51e765f9c1df77}{set\-Window\-Pos} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Sets the window Position. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___facade_af2468f9018f13e29335253aa93940b89}{get\-Window\-Pos} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em Gets the window position. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_f_m_l___facade_ab9589b861c25532a4a397e87d5dde5f2}{get\-Focus} ()
+\begin{DoxyCompactList}\small\item\em Gets current focus of the window. \end{DoxyCompactList}\item 
+bool \hyperlink{class_s_f_m_l___facade_a565762751ecd44eaad03e3ed6329954e}{get\-Reshape} ()
+\begin{DoxyCompactList}\small\item\em Gets if the window has been resized. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_f_m_l___facade_a1e338ffadc16f2b5b462ac8cf37f4a1b}{update} ()
+\begin{DoxyCompactList}\small\item\em Gets the information from the window facade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The Facade of S\-F\-M\-L. 
+
+This class provides a Facade between some components in our engine and S\-F\-M\-L \begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Some Functions are not used in this class, while others may have been split down furthure. 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_f_m_l___facade_a09e484b954d3b6a1a1590860f80e022b}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!get\-Event@{get\-Event}}
+\index{get\-Event@{get\-Event}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{get\-Event}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Window$\ast$ S\-F\-M\-L\-\_\-\-Facade\-::get\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_s_f_m_l___facade_a09e484b954d3b6a1a1590860f80e022b}
+
+
+returns the event log from sfml 
+
+Returns the Event log from sfml \begin{DoxyReturn}{Returns}
+sf\-::\-Window$\ast$ returns the window so polling can take place 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function was initially used for testing and a possible way to poll for key\-Board events. The issue is that the input events are locked to the window that was created. this is a limitation by most operating systems The best way to resolve it would be to pass the window or find another method of input
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]This fuction is no longer needed as a better way was found and implemented in the input engine \end{DoxyRefDesc}
+\hypertarget{class_s_f_m_l___facade_ab9589b861c25532a4a397e87d5dde5f2}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!get\-Focus@{get\-Focus}}
+\index{get\-Focus@{get\-Focus}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{get\-Focus}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-M\-L\-\_\-\-Facade\-::get\-Focus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_ab9589b861c25532a4a397e87d5dde5f2}
+
+
+Gets current focus of the window. 
+
+If the window is the current focussed window in windows, it will be true \begin{DoxyReturn}{Returns}
+true, if this window is the one currently selected 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___facade_a565762751ecd44eaad03e3ed6329954e}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!get\-Reshape@{get\-Reshape}}
+\index{get\-Reshape@{get\-Reshape}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{get\-Reshape}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-M\-L\-\_\-\-Facade\-::get\-Reshape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_a565762751ecd44eaad03e3ed6329954e}
+
+
+Gets if the window has been resized. 
+
+\begin{DoxyReturn}{Returns}
+true, if the window has been resized 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___facade_af2468f9018f13e29335253aa93940b89}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!get\-Window\-Pos@{get\-Window\-Pos}}
+\index{get\-Window\-Pos@{get\-Window\-Pos}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{get\-Window\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Facade\-::get\-Window\-Pos (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_af2468f9018f13e29335253aa93940b89}
+
+
+Gets the window position. 
+
+Gets the window position
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int, Pass in an int and the x position is assigned to it \\
+\hline
+{\em y} & int, Pass in an int and the y position is assigned to it \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_f_m_l___facade_a1ba95a94ef28178eef51e765f9c1df77}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!set\-Window\-Pos@{set\-Window\-Pos}}
+\index{set\-Window\-Pos@{set\-Window\-Pos}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{set\-Window\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Facade\-::set\-Window\-Pos (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_a1ba95a94ef28178eef51e765f9c1df77}
+
+
+Sets the window Position. 
+
+Sets the window to a position on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int, The position in the X plane \\
+\hline
+{\em y} & \mbox{[}description\mbox{]} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_s_f_m_l___facade_a1e338ffadc16f2b5b462ac8cf37f4a1b}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!update@{update}}
+\index{update@{update}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Facade\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_a1e338ffadc16f2b5b462ac8cf37f4a1b}
+
+
+Gets the information from the window facade. 
+
+Polls for events from the window part \begin{DoxyNote}{Note}
+As mentioned before there are certain limitations with input and events when it comes to almost all operating systems 
+\end{DoxyNote}
+\hypertarget{class_s_f_m_l___facade_ac698020c6dc577e2c3b7d9b226bd6f52}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!win\-\_\-active@{win\-\_\-active}}
+\index{win\-\_\-active@{win\-\_\-active}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{win\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-M\-L\-\_\-\-Facade\-::win\-\_\-active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_ac698020c6dc577e2c3b7d9b226bd6f52}
+
+
+Set the window as the active open\-G\-L context. 
+
+Sets the \hyperlink{class_window}{Window} as the current open\-G\-L context so alll open\-G\-L commands will be performed here \begin{DoxyReturn}{Returns}
+true, if completed successfully 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___facade_a6a7b88dd503f64f62fd92640981eccc9}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!win\-\_\-\-Create@{win\-\_\-\-Create}}
+\index{win\-\_\-\-Create@{win\-\_\-\-Create}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{win\-\_\-\-Create}]{\setlength{\rightskip}{0pt plus 5cm}bool S\-F\-M\-L\-\_\-\-Facade\-::win\-\_\-\-Create (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_a6a7b88dd503f64f62fd92640981eccc9}
+
+
+Create a \hyperlink{class_window}{Window}. 
+
+Creates a window for the user
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & int, Representing the Width of the window \\
+\hline
+{\em height} & int, Representing the Height of the window \\
+\hline
+{\em name} & std\-::string, Representing the Name of the window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if Succeeded 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___facade_adc4c6ebbd7fa6a1b59dd55cdf2d13b56}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!win\-\_\-display@{win\-\_\-display}}
+\index{win\-\_\-display@{win\-\_\-display}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{win\-\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}void S\-F\-M\-L\-\_\-\-Facade\-::win\-\_\-display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_adc4c6ebbd7fa6a1b59dd55cdf2d13b56}
+
+
+Display all the draws between the previous render the the current one. 
+
+Swaps the Buffer's \hypertarget{class_s_f_m_l___facade_ac75771d37a899ee7a998320591f42b87}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!win\-\_\-get\-Height@{win\-\_\-get\-Height}}
+\index{win\-\_\-get\-Height@{win\-\_\-get\-Height}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{win\-\_\-get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int S\-F\-M\-L\-\_\-\-Facade\-::win\-\_\-get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_ac75771d37a899ee7a998320591f42b87}
+
+
+Get the Height of the window. 
+
+\begin{DoxyReturn}{Returns}
+int Representing the Height of the window 
+\end{DoxyReturn}
+\hypertarget{class_s_f_m_l___facade_a74825fe2634276a08d085c20873ad3ab}{\index{S\-F\-M\-L\-\_\-\-Facade@{S\-F\-M\-L\-\_\-\-Facade}!win\-\_\-get\-Width@{win\-\_\-get\-Width}}
+\index{win\-\_\-get\-Width@{win\-\_\-get\-Width}!SFML_Facade@{S\-F\-M\-L\-\_\-\-Facade}}
+\subsubsection[{win\-\_\-get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int S\-F\-M\-L\-\_\-\-Facade\-::win\-\_\-get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s_f_m_l___facade_a74825fe2634276a08d085c20873ad3ab}
+
+
+Get the \hyperlink{class_window}{Window} Width. 
+
+\begin{DoxyReturn}{Returns}
+int representing the Width of the window 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/S\-F\-M\-L\-\_\-\-Facade.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/S\-F\-M\-L\-\_\-\-Facade.\-cpp\end{DoxyCompactItemize}

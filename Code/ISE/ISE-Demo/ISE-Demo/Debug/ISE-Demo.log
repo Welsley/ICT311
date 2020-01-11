@@ -1,0 +1,123 @@
+﻿Build started 18/04/2014 11:29:38 PM.
+     1>Project "E:\GRABLAURG\ISE\ISE-Demo\ISE-Demo\ISE-Demo.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\ISE-Demo.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\GRABLAURG\ISE\ISE-Demo\\ThirdParty\assimp\include" /I"E:\GRABLAURG\ISE\ISE-Demo\\ThirdParty\SFML-2.1\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AssetMng.cpp Camera.cpp Clock.cpp Effect.cpp GameObject.cpp GameObjectFactory.cpp gameScript.cpp HUD.cpp Input.cpp ISE.cpp Loaderab.cpp Main.cpp Object2D.cpp Object3D.cpp objLoader.cpp OPENGL_Facade.cpp Render.cpp RenderEngine.cpp SFML_Clock.cpp SFML_Facade.cpp SFML_Input.cpp SFML_Texture.cpp Texture.cpp Window.cpp
+         Window.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\window.cpp(27): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\window.cpp(27): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\window.cpp(52): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\window.cpp(57): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Texture.cpp
+         SFML_Texture.cpp
+         SFML_Input.cpp
+         SFML_Facade.cpp
+         SFML_Clock.cpp
+         RenderEngine.cpp
+         Render.cpp
+         OPENGL_Facade.cpp
+         objLoader.cpp
+         Object3D.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\object3d.cpp(119): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\object3d.cpp(123): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\object3d.cpp(127): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+         Object2D.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\object2d.cpp(116): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\object2d.cpp(120): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\object2d.cpp(124): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+         Main.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\main.cpp(29): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\grablaurg\ise\ise-demo\ise-demo\main.cpp(67): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\main.cpp(67): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\main.cpp(96): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\main.cpp(97): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Loaderab.cpp
+         ISE.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(7): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(7): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(8): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(8): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(20): warning C4305: '=' : truncation from 'double' to 'float'
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(98): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(99): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(100): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(137): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(138): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(139): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(225): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(226): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(227): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(228): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(250): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(258): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(259): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\ise.cpp(260): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+         Input.cpp
+         HUD.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\hud.cpp(119): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\hud.cpp(123): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\hud.cpp(127): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+         gameScript.cpp
+         GameObjectFactory.cpp
+         GameObject.cpp
+         Generating Code...
+     1>e:\grablaurg\ise\ise-demo\ise-demo\gameobjectfactory.cpp(29): warning C4715: 'GameObjectFactory::Create' : not all control paths return a value
+         Compiling...
+         Effect.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\effect.cpp(116): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\effect.cpp(120): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+     1>e:\grablaurg\ise\ise-demo\ise-demo\effect.cpp(124): warning C4482: nonstandard extension used: enum 'Axis' used in qualified name
+         Clock.cpp
+         Camera.cpp
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(31): warning C4305: '=' : truncation from 'double' to 'float'
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(215): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(250): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(427): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(427): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(427): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>e:\grablaurg\ise\ise-demo\ise-demo\camera.cpp(427): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         AssetMng.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ISE-Demo.exe.embed.manifest.res" Debug\ISE-Demo_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GRABLAURG\ISE\ISE-Demo\Debug\ISE-Demo.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\GRABLAURG\ISE\ISE-Demo\\ThirdParty\assimp\lib\assimp_debug-dll_win32" /LIBPATH:"E:\GRABLAURG\ISE\ISE-Demo\\ThirdParty\SFML-2.1\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" opengl32.lib glu32.lib assimp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ISE-Demo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\GRABLAURG\ISE\ISE-Demo\Debug\ISE-Demo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GRABLAURG\ISE\ISE-Demo\Debug\ISE-Demo.lib" /MACHINE:X86 "Debug\ISE-Demo.exe.embed.manifest.res"
+         Debug\AssetMng.obj
+         Debug\Camera.obj
+         Debug\Clock.obj
+         Debug\Effect.obj
+         Debug\GameObject.obj
+         Debug\GameObjectFactory.obj
+         Debug\gameScript.obj
+         Debug\HUD.obj
+         Debug\Input.obj
+         Debug\ISE.obj
+         Debug\Loaderab.obj
+         Debug\Main.obj
+         Debug\Object2D.obj
+         Debug\Object3D.obj
+         Debug\objLoader.obj
+         Debug\OPENGL_Facade.obj
+         Debug\Render.obj
+         Debug\RenderEngine.obj
+         Debug\SFML_Clock.obj
+         Debug\SFML_Facade.obj
+         Debug\SFML_Input.obj
+         Debug\SFML_Texture.obj
+         Debug\Texture.obj
+         Debug\Window.obj
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ISE-Demo.exe.embed.manifest" /manifest "Debug\ISE-Demo.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         ISE-Demo.vcxproj -> E:\GRABLAURG\ISE\ISE-Demo\Debug\ISE-Demo.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\ISE-Demo.unsuccessfulbuild".
+         Touching "Debug\ISE-Demo.lastbuildstate".
+     1>Done Building Project "E:\GRABLAURG\ISE\ISE-Demo\ISE-Demo\ISE-Demo.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:38.84

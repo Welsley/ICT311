@@ -1,0 +1,109 @@
+\hypertarget{class_asset_mng}{\section{Asset\-Mng Class Reference}
+\label{class_asset_mng}\index{Asset\-Mng@{Asset\-Mng}}
+}
+
+
+This class stores and manages all the assets in the engine.  
+
+
+
+
+{\ttfamily \#include $<$Asset\-Mng.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries A\-S\-\_\-\-T\-Y\-P\-E} \{ {\bfseries A\-S\-\_\-\-T\-E\-X\-T\-U\-R\-E} = 0, 
+{\bfseries A\-S\-\_\-\-O\-B\-J}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_asset_mng_acd178c7a87bd71842e3af302c79983dd}{Load} (A\-S\-\_\-\-T\-Y\-P\-E, std\-::string location)
+\begin{DoxyCompactList}\small\item\em Load in an asset from a file location. \end{DoxyCompactList}\item 
+void \hyperlink{class_asset_mng_a2301ce67cfccde7ada003e61ff3cab4f}{get\-Data} (std\-::string location, \hyperlink{class_v_a_o}{V\-A\-O} \&data)
+\begin{DoxyCompactList}\small\item\em gets a \hyperlink{class_v_a_o}{V\-A\-O} of the data with that string as its name \end{DoxyCompactList}\item 
+void \hyperlink{class_asset_mng_a431fb64b5423f187ff2902eebfdcf654}{get\-Data} (std\-::string location)
+\begin{DoxyCompactList}\small\item\em Get the texture associated with that file location (name) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class stores and manages all the assets in the engine. 
+
+It takes in all Assets and loads them in, it will then take in the asset and only load it once. when asked for data it will return the same data if the request is the same.
+
+\begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]This function does not use the best of design, it could be easier to expand with the use of factories. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_asset_mng_a2301ce67cfccde7ada003e61ff3cab4f}{\index{Asset\-Mng@{Asset\-Mng}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!AssetMng@{Asset\-Mng}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Asset\-Mng\-::get\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{location, }
+\item[{{\bf V\-A\-O} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_asset_mng_a2301ce67cfccde7ada003e61ff3cab4f}
+
+
+gets a \hyperlink{class_v_a_o}{V\-A\-O} of the data with that string as its name 
+
+Takes in a string of the name and gives back a common data struxture
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & String, This is both the location and the name \\
+\hline
+{\em data} & \hyperlink{class_v_a_o}{V\-A\-O}, a data structure that we will assign the data to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_asset_mng_a431fb64b5423f187ff2902eebfdcf654}{\index{Asset\-Mng@{Asset\-Mng}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!AssetMng@{Asset\-Mng}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Asset\-Mng\-::get\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{location}
+\end{DoxyParamCaption}
+)}}\label{class_asset_mng_a431fb64b5423f187ff2902eebfdcf654}
+
+
+Get the texture associated with that file location (name) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & String, both the name and location of the file you want the data from \\
+\hline
+{\em text} & a place for us to assign the data you want \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_asset_mng_acd178c7a87bd71842e3af302c79983dd}{\index{Asset\-Mng@{Asset\-Mng}!Load@{Load}}
+\index{Load@{Load}!AssetMng@{Asset\-Mng}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}void Asset\-Mng\-::\-Load (
+\begin{DoxyParamCaption}
+\item[{A\-S\-\_\-\-T\-Y\-P\-E}]{type, }
+\item[{std\-::string}]{location}
+\end{DoxyParamCaption}
+)}}\label{class_asset_mng_acd178c7a87bd71842e3af302c79983dd}
+
+
+Load in an asset from a file location. 
+
+A file is specified along with its asset type (texture, object or sound) an A\-S\-\_\-\-T\-Y\-P\-E is passed in to specify the type, while the string is for the location. This class checks to see if it exists to ensure assets are only loaded once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em E} & A\-S\-\_\-\-T\-Y\-P\-E specifying what kind of data structure is waiting for it \\
+\hline
+{\em location} & the relative file location, and it is also the name \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Asset\-Mng.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Asset\-Mng.\-cpp\end{DoxyCompactItemize}

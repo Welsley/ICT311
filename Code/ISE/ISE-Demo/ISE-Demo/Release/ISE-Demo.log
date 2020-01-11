@@ -1,0 +1,17 @@
+﻿Build started 15/05/2014 2:40:19 PM.
+     1>Project "C:\Users\Seij\Uni\ICT311\GRABLAURG\Code\ISE\ISE-Demo\ISE-Demo\ISE-Demo.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\ISE-Demo.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         ISE-Demo.vcxproj -> C:\Users\Seij\Uni\ICT311\GRABLAURG\Code\ISE\ISE-Demo\Release\ISE-Demo.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\ISE-Demo.unsuccessfulbuild".
+         Touching "Release\ISE-Demo.lastbuildstate".
+     1>Done Building Project "C:\Users\Seij\Uni\ICT311\GRABLAURG\Code\ISE\ISE-Demo\ISE-Demo\ISE-Demo.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07

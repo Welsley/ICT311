@@ -1,0 +1,61 @@
+\hypertarget{classobj_loader}{\section{obj\-Loader Class Reference}
+\label{classobj_loader}\index{obj\-Loader@{obj\-Loader}}
+}
+
+
+A Loader function that converts the model data into the common \hyperlink{class_v_a_o}{V\-A\-O} format.  
+
+
+
+
+{\ttfamily \#include $<$obj\-Loader.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_v_a_o}{V\-A\-O} \hyperlink{classobj_loader_a203279b541b0b95974d6aed84ec686aa}{load} (std\-::string location)
+\begin{DoxyCompactList}\small\item\em load data from model \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Loader function that converts the model data into the common \hyperlink{class_v_a_o}{V\-A\-O} format. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_v_a_o}{V\-A\-O}, containing the model data needed to be drawn in opengl 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+I would like to expand the data loaded in to allow it to get more information about the models 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classobj_loader_a203279b541b0b95974d6aed84ec686aa}{\index{obj\-Loader@{obj\-Loader}!load@{load}}
+\index{load@{load}!objLoader@{obj\-Loader}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\-A\-O} obj\-Loader\-::load (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classobj_loader_a203279b541b0b95974d6aed84ec686aa}
+
+
+load data from model 
+
+Loads data from a range of model formats and coverts them to \hyperlink{class_v_a_o}{V\-A\-O}'s so the render engine only needs to handle one type
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & The name and location of the file you want to load in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_v_a_o}{V\-A\-O}, containing all the data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/obj\-Loader.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/obj\-Loader.\-cpp\end{DoxyCompactItemize}

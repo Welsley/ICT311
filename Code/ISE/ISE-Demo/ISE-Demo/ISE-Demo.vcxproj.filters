@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ISE">
+      <UniqueIdentifier>{4da3280a-6281-44af-bc9b-497979908446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{535b98ee-790a-46a5-ab4b-5e9b6f24e2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Render">
+      <UniqueIdentifier>{23a24a16-b3a9-4f8b-927c-6611eef56918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Render\Components">
+      <UniqueIdentifier>{dce2878b-d81c-4f4c-af4f-8e98056ef5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ISE">
+      <UniqueIdentifier>{5db76955-3b74-45f3-9cb0-a28b7563d993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{3f4c9b09-94a4-458a-993d-32e0f4fb6a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Render">
+      <UniqueIdentifier>{e0f72324-a05c-4255-b37d-275ef59bfa97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Render\Components">
+      <UniqueIdentifier>{5ee44a82-4397-44c6-bd3b-3a718a1f75e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Asset Manager">
+      <UniqueIdentifier>{b2a42d6d-da91-494c-9b1b-4dd84aa72adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Asset Manager">
+      <UniqueIdentifier>{f72943f0-0698-43bd-ba45-7e4729ac8b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Asset Manager\Components">
+      <UniqueIdentifier>{dcf413be-78f9-4faf-97e9-8ce7de57c24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Asset Manager\Components">
+      <UniqueIdentifier>{2cba7052-d9f7-4d63-820f-7e90fc92ef79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Facades">
+      <UniqueIdentifier>{5e6ef3fd-39f1-4a53-83d2-b9db46a328c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{019c81ae-36c7-437c-aed2-b3712f0d13b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Facades">
+      <UniqueIdentifier>{cc5a5bb4-c8b4-4838-86ce-9350a2583f6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Input">
+      <UniqueIdentifier>{a78c5cd2-ed19-470f-8af4-b3586892744d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Input">
+      <UniqueIdentifier>{efc26525-0a58-40d5-ac24-f715ac119d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Game Object">
+      <UniqueIdentifier>{d4aaec80-05dc-486d-ad80-fe096f6330b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Systems\Game Object\Components">
+      <UniqueIdentifier>{5f049622-62eb-4797-bd8f-d4beb989795a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Game Object">
+      <UniqueIdentifier>{c783029d-8b68-4f9e-9846-1a3f736504c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Game Object\Component">
+      <UniqueIdentifier>{ee2085e2-376e-4302-96ae-c20ab4becaa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{78a9bea4-20e9-4a27-a5e5-9a3c839580e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ISE.h">
+      <Filter>Header Files\ISE</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h">
+      <Filter>Header Files\Systems\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis.h">
+      <Filter>Header Files\Systems\Render\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Header Files\Systems\Render\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\Systems\Render\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Systems\Render\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetMng.h">
+      <Filter>Header Files\Systems\Asset Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Loaderab.h">
+      <Filter>Header Files\Systems\Asset Manager\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="objLoader.h">
+      <Filter>Header Files\Systems\Asset Manager\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Systems\Asset Manager\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="OPENGL_Facade.h">
+      <Filter>Header Files\Systems\Facades</Filter>
+    </ClInclude>
+    <ClInclude Include="SFML_Facade.h">
+      <Filter>Header Files\Systems\Facades</Filter>
+    </ClInclude>
+    <ClInclude Include="SFML_Input.h">
+      <Filter>Header Files\Systems\Facades</Filter>
+    </ClInclude>
+    <ClInclude Include="SFML_Texture.h">
+      <Filter>Header Files\Systems\Facades</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="VAO.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectFactory.h">
+      <Filter>Header Files\Systems\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="gameScript.h">
+      <Filter>Header Files\Systems\Game Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files\Systems\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SFML_Clock.h">
+      <Filter>Header Files\Systems\Facades</Filter>
+    </ClInclude>
+    <ClInclude Include="Clock.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RenderEngine.cpp">
+      <Filter>Source Files\Systems\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>Source Files\Systems\Render\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\Systems\Render\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Systems\Render\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetMng.cpp">
+      <Filter>Source Files\Systems\Asset Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Loaderab.cpp">
+      <Filter>Source Files\Systems\Asset Manager\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="objLoader.cpp">
+      <Filter>Source Files\Systems\Asset Manager\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\Systems\Asset Manager\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="OPENGL_Facade.cpp">
+      <Filter>Source Files\Systems\Facades</Filter>
+    </ClCompile>
+    <ClCompile Include="SFML_Facade.cpp">
+      <Filter>Source Files\Systems\Facades</Filter>
+    </ClCompile>
+    <ClCompile Include="SFML_Input.cpp">
+      <Filter>Source Files\Systems\Facades</Filter>
+    </ClCompile>
+    <ClCompile Include="SFML_Texture.cpp">
+      <Filter>Source Files\Systems\Facades</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Systems\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectFactory.cpp">
+      <Filter>Source Files\Systems\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Source Files\Systems\Game Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="gameScript.cpp">
+      <Filter>Source Files\Systems\Game Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Object2D.cpp">
+      <Filter>Source Files\Systems\Game Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Object3D.cpp">
+      <Filter>Source Files\Systems\Game Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ISE.cpp">
+      <Filter>Source Files\ISE</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\Systems\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SFML_Clock.cpp">
+      <Filter>Source Files\Systems\Facades</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Source Files\Systems\Game Object\Component</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

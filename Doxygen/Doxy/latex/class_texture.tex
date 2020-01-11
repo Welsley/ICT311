@@ -1,0 +1,77 @@
+\hypertarget{class_texture}{\section{Texture Class Reference}
+\label{class_texture}\index{Texture@{Texture}}
+}
+
+
+Loads in the texture from a file.  
+
+
+
+
+{\ttfamily \#include $<$Texture.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_texture_aca0c643c48ba3ae98d4effa09eed1737}{load} (std\-::string location)
+\begin{DoxyCompactList}\small\item\em Load in texture from the a location. \end{DoxyCompactList}\item 
+void \hyperlink{class_texture_a3840dc7429982ffaddeafc8d62345b5d}{bind} ()
+\begin{DoxyCompactList}\small\item\em bind the texture \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads in the texture from a file. 
+
+This class handles loading all the textures and Binding them to open\-G\-L \begin{DoxyReturn}{Returns}
+N/\-A 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+Because it was not possible to seperate the sfml \hyperlink{class_texture}{Texture} into a data structure of my own. I could not seperate the functionality from the data so the texture could not be done independantly of the texture object 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_texture_a3840dc7429982ffaddeafc8d62345b5d}{\index{Texture@{Texture}!bind@{bind}}
+\index{bind@{bind}!Texture@{Texture}}
+\subsubsection[{bind}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\-::bind (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_texture_a3840dc7429982ffaddeafc8d62345b5d}
+
+
+bind the texture 
+
+Bind the \hyperlink{class_texture}{Texture} stored in this class to any polygons drawn after it \begin{DoxyNote}{Note}
+It might be an idea to find the glu\-Ints so i can manage the memory and reduce a need to pass large objects around. 
+\end{DoxyNote}
+\hypertarget{class_texture_aca0c643c48ba3ae98d4effa09eed1737}{\index{Texture@{Texture}!load@{load}}
+\index{load@{load}!Texture@{Texture}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Texture\-::load (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{location}
+\end{DoxyParamCaption}
+)}}\label{class_texture_aca0c643c48ba3ae98d4effa09eed1737}
+
+
+Load in texture from the a location. 
+
+Loads in a texture from the given location and stores the texture data within this class. binding is a function from within this class as well
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & A string to the location of the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+It would have been nice to seperate the data from the function so I could keep components sperated 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Texture.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Texture.\-cpp\end{DoxyCompactItemize}

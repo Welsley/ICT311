@@ -1,0 +1,153 @@
+\hypertarget{class_camera}{\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+}
+
+
+The \hyperlink{class_camera}{Camera} class.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries camera\-Mode} \{ {\bfseries F\-R\-E\-E\-C\-A\-M}, 
+{\bfseries O\-R\-B\-I\-T}, 
+{\bfseries F\-P\-S}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_camera_a01f94c3543f56ede7af49dc778f19331}{\hyperlink{class_camera_a01f94c3543f56ede7af49dc778f19331}{Camera} ()}\label{class_camera_a01f94c3543f56ede7af49dc778f19331}
+
+\begin{DoxyCompactList}\small\item\em Default constructor of \hyperlink{class_camera}{Camera} class. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}{\hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\-Camera} ()}\label{class_camera_ad1897942d0ccf91052386388a497349f}
+
+\begin{DoxyCompactList}\small\item\em Default destructor of \hyperlink{class_camera}{Camera} class. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a02be8aa0dbef77e02dddc715a726fb67}{void \hyperlink{class_camera_a02be8aa0dbef77e02dddc715a726fb67}{reset} ()}\label{class_camera_a02be8aa0dbef77e02dddc715a726fb67}
+
+\begin{DoxyCompactList}\small\item\em The reset function for the \hyperlink{class_camera}{Camera} class. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ad8adad1e759bbb6c96b83d92427300f1}{\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_ad8adad1e759bbb6c96b83d92427300f1}{get\-Pos} ()}\label{class_camera_ad8adad1e759bbb6c96b83d92427300f1}
+
+\begin{DoxyCompactList}\small\item\em Get camera positions by \hyperlink{struct_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a5bdb6874746357edbcb107f794243d68}{float \hyperlink{class_camera_a5bdb6874746357edbcb107f794243d68}{get\-Pos\-X} ()}\label{class_camera_a5bdb6874746357edbcb107f794243d68}
+
+\begin{DoxyCompactList}\small\item\em Get camera x position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ac88cee11c872e6a82d4da2e95f4ac97e}{float \hyperlink{class_camera_ac88cee11c872e6a82d4da2e95f4ac97e}{get\-Pos\-Y} ()}\label{class_camera_ac88cee11c872e6a82d4da2e95f4ac97e}
+
+\begin{DoxyCompactList}\small\item\em Get camera y position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a83526ad32976aadb05641a04bfbfd671}{float \hyperlink{class_camera_a83526ad32976aadb05641a04bfbfd671}{get\-Pos\-Z} ()}\label{class_camera_a83526ad32976aadb05641a04bfbfd671}
+
+\begin{DoxyCompactList}\small\item\em Get camera z position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_abf45e1089bf96450471bbc36ee1fa3b8}{void \hyperlink{class_camera_abf45e1089bf96450471bbc36ee1fa3b8}{set\-Pos} (\hyperlink{struct_vector3}{Vector3} v)}\label{class_camera_abf45e1089bf96450471bbc36ee1fa3b8}
+
+\begin{DoxyCompactList}\small\item\em Set camera positions with a \hyperlink{struct_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a3c4f432c567e59175968034c812eb56b}{void \hyperlink{class_camera_a3c4f432c567e59175968034c812eb56b}{set\-Pos} (float x, float y, float z)}\label{class_camera_a3c4f432c567e59175968034c812eb56b}
+
+\begin{DoxyCompactList}\small\item\em Set camera positions with three floats. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a72d55357ba92eac77e5d685f21a2b4be}{\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_a72d55357ba92eac77e5d685f21a2b4be}{get\-Focus} ()}\label{class_camera_a72d55357ba92eac77e5d685f21a2b4be}
+
+\begin{DoxyCompactList}\small\item\em Get camera focus positions by \hyperlink{struct_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a95069ab8c46776a4c63e65a436ee0c03}{float \hyperlink{class_camera_a95069ab8c46776a4c63e65a436ee0c03}{get\-Focus\-X} ()}\label{class_camera_a95069ab8c46776a4c63e65a436ee0c03}
+
+\begin{DoxyCompactList}\small\item\em Get camera x focus position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a54d046e2a6fbd638ff744b5fb8099ff3}{float \hyperlink{class_camera_a54d046e2a6fbd638ff744b5fb8099ff3}{get\-Focus\-Y} ()}\label{class_camera_a54d046e2a6fbd638ff744b5fb8099ff3}
+
+\begin{DoxyCompactList}\small\item\em Get camera y focus position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a6e7f36a5bd302adaf7e0671015fcd8f3}{float \hyperlink{class_camera_a6e7f36a5bd302adaf7e0671015fcd8f3}{get\-Focus\-Z} ()}\label{class_camera_a6e7f36a5bd302adaf7e0671015fcd8f3}
+
+\begin{DoxyCompactList}\small\item\em Get camera z focus position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a887dffb42dc92061221920a0a4087cb8}{void \hyperlink{class_camera_a887dffb42dc92061221920a0a4087cb8}{set\-Focus} (\hyperlink{struct_vector3}{Vector3} v)}\label{class_camera_a887dffb42dc92061221920a0a4087cb8}
+
+\begin{DoxyCompactList}\small\item\em Set camera focus positions with a \hyperlink{struct_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a9b776c8967d097ce693ed6729d7d18eb}{void \hyperlink{class_camera_a9b776c8967d097ce693ed6729d7d18eb}{set\-Focus} (float x, float y, float z)}\label{class_camera_a9b776c8967d097ce693ed6729d7d18eb}
+
+\begin{DoxyCompactList}\small\item\em Set camera focus positions with three floats. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a907f2f1f337e4c62f52174167f6ea148}{\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_a907f2f1f337e4c62f52174167f6ea148}{get\-Up} ()}\label{class_camera_a907f2f1f337e4c62f52174167f6ea148}
+
+\begin{DoxyCompactList}\small\item\em Get camera up positions by \hyperlink{struct_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ae57276d6440259bbc960515c7894d431}{float \hyperlink{class_camera_ae57276d6440259bbc960515c7894d431}{get\-Up\-X} ()}\label{class_camera_ae57276d6440259bbc960515c7894d431}
+
+\begin{DoxyCompactList}\small\item\em Get camera x up position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a0366609e928163de2455a3d2f6d8673f}{float \hyperlink{class_camera_a0366609e928163de2455a3d2f6d8673f}{get\-Up\-Y} ()}\label{class_camera_a0366609e928163de2455a3d2f6d8673f}
+
+\begin{DoxyCompactList}\small\item\em Get camera y up position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_abc66e19d6e2854f769cfad869e5d0828}{float \hyperlink{class_camera_abc66e19d6e2854f769cfad869e5d0828}{get\-Up\-Z} ()}\label{class_camera_abc66e19d6e2854f769cfad869e5d0828}
+
+\begin{DoxyCompactList}\small\item\em Get camera z up position as a float. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a05b6cdbe20ed483ba250e5cf014edcde}{void \hyperlink{class_camera_a05b6cdbe20ed483ba250e5cf014edcde}{set\-Up} (\hyperlink{struct_vector3}{Vector3} v)}\label{class_camera_a05b6cdbe20ed483ba250e5cf014edcde}
+
+\begin{DoxyCompactList}\small\item\em Set camera up positions with a \hyperlink{struct_vector3}{Vector3}. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a2c6de15f799c8e23c26d3a3f3ee1dcf8}{void \hyperlink{class_camera_a2c6de15f799c8e23c26d3a3f3ee1dcf8}{set\-Up} (float x, float y, float z)}\label{class_camera_a2c6de15f799c8e23c26d3a3f3ee1dcf8}
+
+\begin{DoxyCompactList}\small\item\em Set camera up positions with three floats. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a290fca3e908e04e51e4a785a14fba8a1}{void \hyperlink{class_camera_a290fca3e908e04e51e4a785a14fba8a1}{set\-Cam\-Mode} (camera\-Mode m)}\label{class_camera_a290fca3e908e04e51e4a785a14fba8a1}
+
+\begin{DoxyCompactList}\small\item\em Set camera mode. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_aa67fdde5001bb777ad917c3a1a40fd60}{void \hyperlink{class_camera_aa67fdde5001bb777ad917c3a1a40fd60}{update\-Camera} ()}\label{class_camera_aa67fdde5001bb777ad917c3a1a40fd60}
+
+\begin{DoxyCompactList}\small\item\em Function for updating the camera. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ad47d745253d7c8151ce1d6988e8ccf43}{void \hyperlink{class_camera_ad47d745253d7c8151ce1d6988e8ccf43}{move\-Forward} (float amount)}\label{class_camera_ad47d745253d7c8151ce1d6988e8ccf43}
+
+\begin{DoxyCompactList}\small\item\em Function for moving the camera forward. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ab4f0342b7e3c5b15349a001c9607b6b2}{void \hyperlink{class_camera_ab4f0342b7e3c5b15349a001c9607b6b2}{move\-Right} (float amount)}\label{class_camera_ab4f0342b7e3c5b15349a001c9607b6b2}
+
+\begin{DoxyCompactList}\small\item\em Function for moving the camera to the right. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a0ca570bdc4e7687e3f8cab9eb982d0dc}{void \hyperlink{class_camera_a0ca570bdc4e7687e3f8cab9eb982d0dc}{rotate\-Down} (float amount)}\label{class_camera_a0ca570bdc4e7687e3f8cab9eb982d0dc}
+
+\begin{DoxyCompactList}\small\item\em Function for rotating the camera down. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ae9bfc5f67b5e5eb9bb47159db07365ea}{void \hyperlink{class_camera_ae9bfc5f67b5e5eb9bb47159db07365ea}{rotate\-Right} (float amount)}\label{class_camera_ae9bfc5f67b5e5eb9bb47159db07365ea}
+
+\begin{DoxyCompactList}\small\item\em Function for rotating the camera to the right. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a941378afae5e99c766f8bfd508c42008}{void \hyperlink{class_camera_a941378afae5e99c766f8bfd508c42008}{move\-Up} (float amount)}\label{class_camera_a941378afae5e99c766f8bfd508c42008}
+
+\begin{DoxyCompactList}\small\item\em Function for moving the camera up. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a5b65e0419860419673a4d00b430f599e}{void \hyperlink{class_camera_a5b65e0419860419673a4d00b430f599e}{set\-Cam\-Perspectives} (float fov, float ratio, float cnear, float cfar)}\label{class_camera_a5b65e0419860419673a4d00b430f599e}
+
+\begin{DoxyCompactList}\small\item\em Function for setting the camera perspective. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ade53ee61895c2143da3cec03d08ef3eb}{void \hyperlink{class_camera_ade53ee61895c2143da3cec03d08ef3eb}{set\-F\-O\-V} (float fov)}\label{class_camera_ade53ee61895c2143da3cec03d08ef3eb}
+
+\begin{DoxyCompactList}\small\item\em Function for setting the camera Field Of Vision. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a2ddcff55d196d1c57a3310d9c6119f95}{void \hyperlink{class_camera_a2ddcff55d196d1c57a3310d9c6119f95}{set\-Ratio} (float ratio)}\label{class_camera_a2ddcff55d196d1c57a3310d9c6119f95}
+
+\begin{DoxyCompactList}\small\item\em Function for setting the camera perspective ratio. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a72d9ada917618e3505fa0cd1f82f6272}{void \hyperlink{class_camera_a72d9ada917618e3505fa0cd1f82f6272}{set\-Near} (float near)}\label{class_camera_a72d9ada917618e3505fa0cd1f82f6272}
+
+\begin{DoxyCompactList}\small\item\em Function for setting the camera near clipping (has to be a positive number!) \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a329cba7e3a6eeba957c9751007fc675e}{void \hyperlink{class_camera_a329cba7e3a6eeba957c9751007fc675e}{set\-Far} (float Far)}\label{class_camera_a329cba7e3a6eeba957c9751007fc675e}
+
+\begin{DoxyCompactList}\small\item\em Function for setting the camera far clipping (has to be a positive number!) \end{DoxyCompactList}\item 
+\hypertarget{class_camera_add35feeba6d994afcd9c3ed6d6a25929}{void {\bfseries set\-Cam\-Ortho2\-D} (float left, float right, float down, float up)}\label{class_camera_add35feeba6d994afcd9c3ed6d6a25929}
+
+\item 
+\hypertarget{class_camera_ade08194ea0d5b01fe913d6d22b78fa4a}{void {\bfseries set\-Ortho2\-D\-Begin} ()}\label{class_camera_ade08194ea0d5b01fe913d6d22b78fa4a}
+
+\item 
+\hypertarget{class_camera_a41a854c5eccc8b2f8463e2ffbb5b628e}{void {\bfseries set\-Ortho2\-D\-End} ()}\label{class_camera_a41a854c5eccc8b2f8463e2ffbb5b628e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_camera}{Camera} class. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Welsley Gai-\/\-Yeen Lui 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+
+\end{DoxyDate}
+\end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Camera.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Camera.\-cpp\end{DoxyCompactItemize}

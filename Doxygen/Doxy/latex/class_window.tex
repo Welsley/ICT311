@@ -1,0 +1,383 @@
+\hypertarget{class_window}{\section{Window Class Reference}
+\label{class_window}\index{Window@{Window}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_window_a4a680ada9e0fea7c45c8c84614cb5699}{Window} (\hyperlink{class_s_f_m_l___facade}{S\-F\-M\-L\-\_\-\-Facade} window)
+\begin{DoxyCompactList}\small\item\em copy a window in so both use the same address \end{DoxyCompactList}\item 
+void \hyperlink{class_window_ac10f45b63d94348594f65398c0583151}{create} (int width, int height, std\-::string name)
+\begin{DoxyCompactList}\small\item\em create a window \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a574ee2df1903f21e80b2e1c3ad487339}{set\-Width\-Height} (int width, int height)
+\begin{DoxyCompactList}\small\item\em set this window's width and height \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a1f38c584ac5fb56dd4de62f56d8e62e3}{set\-Width} (int width)
+\begin{DoxyCompactList}\small\item\em set this window's width \end{DoxyCompactList}\item 
+void \hyperlink{class_window_af84228b0e73053ce7632bef29047b57b}{set\-Height} (int height)
+\begin{DoxyCompactList}\small\item\em set this window's height \end{DoxyCompactList}\item 
+void \hyperlink{class_window_ab10e764f00af15dab354b9693db252fe}{set\-Title} (std\-::string name)
+\begin{DoxyCompactList}\small\item\em set this window's title \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a20e45797c9462dba56ae532fe76cb815}{active} ()
+\begin{DoxyCompactList}\small\item\em set this window to the active opengl context \end{DoxyCompactList}\item 
+void \hyperlink{class_window_afadfafa5a0b9472554759004aafb327e}{display} ()
+\begin{DoxyCompactList}\small\item\em swap buffers \end{DoxyCompactList}\item 
+int \hyperlink{class_window_a2d459fe21a48b6a41834a32a6c84fe2e}{get\-Width} ()
+\begin{DoxyCompactList}\small\item\em get width \end{DoxyCompactList}\item 
+int \hyperlink{class_window_a02acaaf02d8b63d4bd74d99482fe3a78}{get\-Height} ()
+\begin{DoxyCompactList}\small\item\em ge height \end{DoxyCompactList}\item 
+void \hyperlink{class_window_aeb09abe99d95c2a0e18b376a69ff1829}{enable\-Depth} ()
+\begin{DoxyCompactList}\small\item\em enable depth items \end{DoxyCompactList}\item 
+void \hyperlink{class_window_aef2dd56a6369e2833e8d28b1c136a92e}{disable\-Depth} ()
+\begin{DoxyCompactList}\small\item\em Disable depth items. \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a0d3072ad7bb6198c4a8f8b2eee9cb65a}{enable\-Lighting} ()
+\begin{DoxyCompactList}\small\item\em enable light \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a02569a6c097115bf19dab36eaa5887e0}{disable\-Lighting} ()
+\begin{DoxyCompactList}\small\item\em disable lights \end{DoxyCompactList}\item 
+void \hyperlink{class_window_ae802af8f8026e3cf48079b83a2fab65d}{colour\-Depth} ()
+\begin{DoxyCompactList}\small\item\em set color and depth automatically \end{DoxyCompactList}\item 
+void \hyperlink{class_window_a02533f2cb7bbb254b5603173dcb48985}{set\-Colour} (float R, float G, float B)
+\begin{DoxyCompactList}\small\item\em set the clear colour \end{DoxyCompactList}\item 
+void \hyperlink{class_window_adb9181c38ed81867aeca95fa1fa6b3f7}{set\-Depth} (float Depth)
+\begin{DoxyCompactList}\small\item\em set depth \end{DoxyCompactList}\item 
+sf\-::\-Window $\ast$ \hyperlink{class_window_a1f00d7696a8ef63e34313e5a5a1224b7}{get\-Event} ()
+\begin{DoxyCompactList}\small\item\em Get events function. \end{DoxyCompactList}\item 
+\hypertarget{class_window_a59515fc5a56e86d5a46d771595daac55}{void {\bfseries update} ()}\label{class_window_a59515fc5a56e86d5a46d771595daac55}
+
+\item 
+void \hyperlink{class_window_aeab5e948ff730b4d7fe503104c52f79c}{set\-Window\-Pos} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set window position \end{DoxyCompactList}\item 
+void \hyperlink{class_window_aded83fb2975d2c14e7892427dd9bc02e}{get\-Window\-Pos} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em get window position \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_window_a4a680ada9e0fea7c45c8c84614cb5699}{\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\subsubsection[{Window}]{\setlength{\rightskip}{0pt plus 5cm}Window\-::\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-F\-M\-L\-\_\-\-Facade}}]{window}
+\end{DoxyParamCaption}
+)}}\label{class_window_a4a680ada9e0fea7c45c8c84614cb5699}
+
+
+copy a window in so both use the same address 
+
+this functio was intended for seperating the input from the render engine while still having access to the events
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & \hyperlink{class_s_f_m_l___facade}{S\-F\-M\-L\-\_\-\-Facade} window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]This function is no longer used, there are better ways to get the key inputs from the user \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_window_a20e45797c9462dba56ae532fe76cb815}{\index{Window@{Window}!active@{active}}
+\index{active@{active}!Window@{Window}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_a20e45797c9462dba56ae532fe76cb815}
+
+
+set this window to the active opengl context 
+
+This window is now going to have all opengl calls applied to it \hypertarget{class_window_ae802af8f8026e3cf48079b83a2fab65d}{\index{Window@{Window}!colour\-Depth@{colour\-Depth}}
+\index{colour\-Depth@{colour\-Depth}!Window@{Window}}
+\subsubsection[{colour\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::colour\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_ae802af8f8026e3cf48079b83a2fab65d}
+
+
+set color and depth automatically 
+
+\mbox{[}long description\mbox{]} \hypertarget{class_window_ac10f45b63d94348594f65398c0583151}{\index{Window@{Window}!create@{create}}
+\index{create@{create}!Window@{Window}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_window_ac10f45b63d94348594f65398c0583151}
+
+
+create a window 
+
+create a window with a name width and heigh specified upon creation
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & int \\
+\hline
+{\em height} & int \\
+\hline
+{\em name} & string \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_aef2dd56a6369e2833e8d28b1c136a92e}{\index{Window@{Window}!disable\-Depth@{disable\-Depth}}
+\index{disable\-Depth@{disable\-Depth}!Window@{Window}}
+\subsubsection[{disable\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::disable\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_aef2dd56a6369e2833e8d28b1c136a92e}
+
+
+Disable depth items. 
+
+Disable depth test and depth mask \hypertarget{class_window_a02569a6c097115bf19dab36eaa5887e0}{\index{Window@{Window}!disable\-Lighting@{disable\-Lighting}}
+\index{disable\-Lighting@{disable\-Lighting}!Window@{Window}}
+\subsubsection[{disable\-Lighting}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::disable\-Lighting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_a02569a6c097115bf19dab36eaa5887e0}
+
+
+disable lights 
+
+disable the lights in opengl \hypertarget{class_window_afadfafa5a0b9472554759004aafb327e}{\index{Window@{Window}!display@{display}}
+\index{display@{display}!Window@{Window}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_afadfafa5a0b9472554759004aafb327e}
+
+
+swap buffers 
+
+display all the open\-G\-L calls that have been called \hypertarget{class_window_aeb09abe99d95c2a0e18b376a69ff1829}{\index{Window@{Window}!enable\-Depth@{enable\-Depth}}
+\index{enable\-Depth@{enable\-Depth}!Window@{Window}}
+\subsubsection[{enable\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::enable\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_aeb09abe99d95c2a0e18b376a69ff1829}
+
+
+enable depth items 
+
+Enable depths test and depth mask \hypertarget{class_window_a0d3072ad7bb6198c4a8f8b2eee9cb65a}{\index{Window@{Window}!enable\-Lighting@{enable\-Lighting}}
+\index{enable\-Lighting@{enable\-Lighting}!Window@{Window}}
+\subsubsection[{enable\-Lighting}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::enable\-Lighting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_a0d3072ad7bb6198c4a8f8b2eee9cb65a}
+
+
+enable light 
+
+enable the opengl lights \begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000006}{Bug}]the functionality of this has not been implemented yet please don't use it unless you can call light \end{DoxyRefDesc}
+\hypertarget{class_window_a1f00d7696a8ef63e34313e5a5a1224b7}{\index{Window@{Window}!get\-Event@{get\-Event}}
+\index{get\-Event@{get\-Event}!Window@{Window}}
+\subsubsection[{get\-Event}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Window$\ast$ Window\-::get\-Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_window_a1f00d7696a8ef63e34313e5a5a1224b7}
+
+
+Get events function. 
+
+This function was used to get to the window so you can poll it \begin{DoxyReturn}{Returns}
+sf\-::\-Event 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]This function is no longer used it has been replaced by a better engine \end{DoxyRefDesc}
+\hypertarget{class_window_a02acaaf02d8b63d4bd74d99482fe3a78}{\index{Window@{Window}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!Window@{Window}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Window\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_a02acaaf02d8b63d4bd74d99482fe3a78}
+
+
+ge height 
+
+get th height of the window \begin{DoxyReturn}{Returns}
+int height 
+\end{DoxyReturn}
+\hypertarget{class_window_a2d459fe21a48b6a41834a32a6c84fe2e}{\index{Window@{Window}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!Window@{Window}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Window\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_window_a2d459fe21a48b6a41834a32a6c84fe2e}
+
+
+get width 
+
+get the width of the window \begin{DoxyReturn}{Returns}
+int width 
+\end{DoxyReturn}
+\hypertarget{class_window_aded83fb2975d2c14e7892427dd9bc02e}{\index{Window@{Window}!get\-Window\-Pos@{get\-Window\-Pos}}
+\index{get\-Window\-Pos@{get\-Window\-Pos}!Window@{Window}}
+\subsubsection[{get\-Window\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::get\-Window\-Pos (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_window_aded83fb2975d2c14e7892427dd9bc02e}
+
+
+get window position 
+
+get window position on screenn
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int pass in address the value is then assigned to it \\
+\hline
+{\em y} & int pass in address the value is then assigned to it \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_a02533f2cb7bbb254b5603173dcb48985}{\index{Window@{Window}!set\-Colour@{set\-Colour}}
+\index{set\-Colour@{set\-Colour}!Window@{Window}}
+\subsubsection[{set\-Colour}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Colour (
+\begin{DoxyParamCaption}
+\item[{float}]{R, }
+\item[{float}]{G, }
+\item[{float}]{B}
+\end{DoxyParamCaption}
+)}}\label{class_window_a02533f2cb7bbb254b5603173dcb48985}
+
+
+set the clear colour 
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & Red \\
+\hline
+{\em G} & Green \\
+\hline
+{\em B} & Blue \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_adb9181c38ed81867aeca95fa1fa6b3f7}{\index{Window@{Window}!set\-Depth@{set\-Depth}}
+\index{set\-Depth@{set\-Depth}!Window@{Window}}
+\subsubsection[{set\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Depth (
+\begin{DoxyParamCaption}
+\item[{float}]{Depth}
+\end{DoxyParamCaption}
+)}}\label{class_window_adb9181c38ed81867aeca95fa1fa6b3f7}
+
+
+set depth 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Depth} & depth \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_af84228b0e73053ce7632bef29047b57b}{\index{Window@{Window}!set\-Height@{set\-Height}}
+\index{set\-Height@{set\-Height}!Window@{Window}}
+\subsubsection[{set\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_window_af84228b0e73053ce7632bef29047b57b}
+
+
+set this window's height 
+
+the height of this window is set here
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & int \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_ab10e764f00af15dab354b9693db252fe}{\index{Window@{Window}!set\-Title@{set\-Title}}
+\index{set\-Title@{set\-Title}!Window@{Window}}
+\subsubsection[{set\-Title}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Title (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_window_ab10e764f00af15dab354b9693db252fe}
+
+
+set this window's title 
+
+the title of this window is set here
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & string \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_a1f38c584ac5fb56dd4de62f56d8e62e3}{\index{Window@{Window}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!Window@{Window}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}}\label{class_window_a1f38c584ac5fb56dd4de62f56d8e62e3}
+
+
+set this window's width 
+
+the width of this window is set here
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & int \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_a574ee2df1903f21e80b2e1c3ad487339}{\index{Window@{Window}!set\-Width\-Height@{set\-Width\-Height}}
+\index{set\-Width\-Height@{set\-Width\-Height}!Window@{Window}}
+\subsubsection[{set\-Width\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Width\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{class_window_a574ee2df1903f21e80b2e1c3ad487339}
+
+
+set this window's width and height 
+
+the width and height of this window is set by two numbers
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & int \\
+\hline
+{\em height} & int \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_window_aeab5e948ff730b4d7fe503104c52f79c}{\index{Window@{Window}!set\-Window\-Pos@{set\-Window\-Pos}}
+\index{set\-Window\-Pos@{set\-Window\-Pos}!Window@{Window}}
+\subsubsection[{set\-Window\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void Window\-::set\-Window\-Pos (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_window_aeab5e948ff730b4d7fe503104c52f79c}
+
+
+set window position 
+
+set the window positio on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int x position on screen \\
+\hline
+{\em y} & int y position on screen \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Window.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Window.\-cpp\end{DoxyCompactItemize}

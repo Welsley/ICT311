@@ -1,0 +1,235 @@
+\hypertarget{class_input}{\section{Input Class Reference}
+\label{class_input}\index{Input@{Input}}
+}
+
+
+The input class.  
+
+
+
+
+{\ttfamily \#include $<$Input.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_input_a9f5845c6e557825117e57455f97bf557}{is\-Press} (Keyboard\-::\-Key key)
+\begin{DoxyCompactList}\small\item\em check is a key is pressed \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_aadcf0bcc21873a7bb1ac6e54f74d7c76}{is\-Released} (Keyboard\-::\-Key key)
+\begin{DoxyCompactList}\small\item\em check if a key has been released (once occurs once after a press) \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_ae263e207d1f27420a393054f60ce4f67}{is\-Mouse\-Press} (Mouse\-::\-Button but)
+\begin{DoxyCompactList}\small\item\em check if a mouse button has been pressed \end{DoxyCompactList}\item 
+bool \hyperlink{class_input_a049d3da4ae94d9e3ebb522d9dd3eb5de}{is\-Mouse\-Released} (Mouse\-::\-Button but)
+\begin{DoxyCompactList}\small\item\em check if a mouse button has been released \end{DoxyCompactList}\item 
+void \hyperlink{class_input_ad540f1ea1157518fcfc51ba303913dce}{lock\-Mouse} ()
+\begin{DoxyCompactList}\small\item\em lock the mouse in a position \end{DoxyCompactList}\item 
+void \hyperlink{class_input_a2af99e8e16adb1d99684edf8b77e53ea}{release\-Mouse} ()
+\begin{DoxyCompactList}\small\item\em release the mouse from its lock \end{DoxyCompactList}\item 
+void \hyperlink{class_input_aae244dc7ffdd7736b1c8660631c51793}{set\-Mouse\-Lock\-Position} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Set the mouse lock position. \end{DoxyCompactList}\item 
+void \hyperlink{class_input_adb2a5b2e67f5516254b515675ed99a46}{get\-Mouse\-Location} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em get the current mouse location \end{DoxyCompactList}\item 
+void \hyperlink{class_input_a6739e45b765de931e931c2048bed6cb1}{get\-Mouse\-Vec} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em get the difference in movement from one call to the next \end{DoxyCompactList}\item 
+void \hyperlink{class_input_a4491443d2a0c9e8c562d798d38017651}{mouse\-Update} ()
+\begin{DoxyCompactList}\small\item\em Call to keep the mouse function good. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The input class. 
+
+This is the engine it takes in the inputs from other parts and puts them into an eays to work with file.
+
+\begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+\begin{DoxyNote}{Note}
+store the input and can keep track of when a button is releaed (only occurs once after it has been pressed) 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_input_adb2a5b2e67f5516254b515675ed99a46}{\index{Input@{Input}!get\-Mouse\-Location@{get\-Mouse\-Location}}
+\index{get\-Mouse\-Location@{get\-Mouse\-Location}!Input@{Input}}
+\subsubsection[{get\-Mouse\-Location}]{\setlength{\rightskip}{0pt plus 5cm}void Input\-::get\-Mouse\-Location (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_input_adb2a5b2e67f5516254b515675ed99a46}
+
+
+get the current mouse location 
+
+Get the current mouse location in windows space (not relative to your window)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & address of an int, x is then assigned \\
+\hline
+{\em y} & address of an int, y is then assigned \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_input_a6739e45b765de931e931c2048bed6cb1}{\index{Input@{Input}!get\-Mouse\-Vec@{get\-Mouse\-Vec}}
+\index{get\-Mouse\-Vec@{get\-Mouse\-Vec}!Input@{Input}}
+\subsubsection[{get\-Mouse\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}void Input\-::get\-Mouse\-Vec (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_input_a6739e45b765de931e931c2048bed6cb1}
+
+
+get the difference in movement from one call to the next 
+
+get the vector of a movement of the mouse from one call to the next
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & address x gives the mouses x position \\
+\hline
+{\em y} & address y gives the mouses y position \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_input_ae263e207d1f27420a393054f60ce4f67}{\index{Input@{Input}!is\-Mouse\-Press@{is\-Mouse\-Press}}
+\index{is\-Mouse\-Press@{is\-Mouse\-Press}!Input@{Input}}
+\subsubsection[{is\-Mouse\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\-::is\-Mouse\-Press (
+\begin{DoxyParamCaption}
+\item[{Mouse\-::\-Button}]{but}
+\end{DoxyParamCaption}
+)}}\label{class_input_ae263e207d1f27420a393054f60ce4f67}
+
+
+check if a mouse button has been pressed 
+
+Check if a mouse button has been pressed
+
+
+\begin{DoxyParams}{Parameters}
+{\em but} & enum representing a key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the button is being pressed 
+\end{DoxyReturn}
+\hypertarget{class_input_a049d3da4ae94d9e3ebb522d9dd3eb5de}{\index{Input@{Input}!is\-Mouse\-Released@{is\-Mouse\-Released}}
+\index{is\-Mouse\-Released@{is\-Mouse\-Released}!Input@{Input}}
+\subsubsection[{is\-Mouse\-Released}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\-::is\-Mouse\-Released (
+\begin{DoxyParamCaption}
+\item[{Mouse\-::\-Button}]{but}
+\end{DoxyParamCaption}
+)}}\label{class_input_a049d3da4ae94d9e3ebb522d9dd3eb5de}
+
+
+check if a mouse button has been released 
+
+only registers once after the key has been released
+
+
+\begin{DoxyParams}{Parameters}
+{\em but} & an enum representing a button on the mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true once after the button wass released 
+\end{DoxyReturn}
+\hypertarget{class_input_a9f5845c6e557825117e57455f97bf557}{\index{Input@{Input}!is\-Press@{is\-Press}}
+\index{is\-Press@{is\-Press}!Input@{Input}}
+\subsubsection[{is\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\-::is\-Press (
+\begin{DoxyParamCaption}
+\item[{Keyboard\-::\-Key}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_input_a9f5845c6e557825117e57455f97bf557}
+
+
+check is a key is pressed 
+
+Use the enum from the key class to determin what kind of input is being checked
+
+
+\begin{DoxyParams}{Parameters}
+{\em key,an} & Enum of the key being estted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, true if it is being pressed 
+\end{DoxyReturn}
+\hypertarget{class_input_aadcf0bcc21873a7bb1ac6e54f74d7c76}{\index{Input@{Input}!is\-Released@{is\-Released}}
+\index{is\-Released@{is\-Released}!Input@{Input}}
+\subsubsection[{is\-Released}]{\setlength{\rightskip}{0pt plus 5cm}bool Input\-::is\-Released (
+\begin{DoxyParamCaption}
+\item[{Keyboard\-::\-Key}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_input_aadcf0bcc21873a7bb1ac6e54f74d7c76}
+
+
+check if a key has been released (once occurs once after a press) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool if the key has been released 
+\end{DoxyReturn}
+\hypertarget{class_input_ad540f1ea1157518fcfc51ba303913dce}{\index{Input@{Input}!lock\-Mouse@{lock\-Mouse}}
+\index{lock\-Mouse@{lock\-Mouse}!Input@{Input}}
+\subsubsection[{lock\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}void Input\-::lock\-Mouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_input_ad540f1ea1157518fcfc51ba303913dce}
+
+
+lock the mouse in a position 
+
+Locks the mouse in a position set by the set\-Mouse\-Lock\-Postion(intx, int y) function; \hypertarget{class_input_a4491443d2a0c9e8c562d798d38017651}{\index{Input@{Input}!mouse\-Update@{mouse\-Update}}
+\index{mouse\-Update@{mouse\-Update}!Input@{Input}}
+\subsubsection[{mouse\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void Input\-::mouse\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_input_a4491443d2a0c9e8c562d798d38017651}
+
+
+Call to keep the mouse function good. 
+
+This function keeps track of the user mouse so we can alwasy see the movement of it \hypertarget{class_input_a2af99e8e16adb1d99684edf8b77e53ea}{\index{Input@{Input}!release\-Mouse@{release\-Mouse}}
+\index{release\-Mouse@{release\-Mouse}!Input@{Input}}
+\subsubsection[{release\-Mouse}]{\setlength{\rightskip}{0pt plus 5cm}void Input\-::release\-Mouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_input_a2af99e8e16adb1d99684edf8b77e53ea}
+
+
+release the mouse from its lock 
+
+releases the mouse from its locked position \hypertarget{class_input_aae244dc7ffdd7736b1c8660631c51793}{\index{Input@{Input}!set\-Mouse\-Lock\-Position@{set\-Mouse\-Lock\-Position}}
+\index{set\-Mouse\-Lock\-Position@{set\-Mouse\-Lock\-Position}!Input@{Input}}
+\subsubsection[{set\-Mouse\-Lock\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Input\-::set\-Mouse\-Lock\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_input_aae244dc7ffdd7736b1c8660631c51793}
+
+
+Set the mouse lock position. 
+
+When it is locked this is the position it will be set to
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int, position on the screen \\
+\hline
+{\em y} & int, position on the screen \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Input.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Input.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{class_render}{\section{Render Class Reference}
+\label{class_render}\index{Render@{Render}}
+}
+
+
+The render portion of the \hyperlink{class_render_engine}{Render\-Engine}.  
+
+
+
+
+{\ttfamily \#include $<$Render.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_render_a3685dee198801656d82b3597c0995a5f}{translate} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em translate the next rendered model to that position \end{DoxyCompactList}\item 
+void \hyperlink{class_render_ac4c31c973bb8a82f965cc5a8c8d81f22}{rotate} (Axis axis, float angle)
+\begin{DoxyCompactList}\small\item\em apply a rotation matrix \end{DoxyCompactList}\item 
+void \hyperlink{class_render_a425bc40a7f1af78b41bc913ab9613cd4}{set\-Wire\-Frame} (bool enable)
+\begin{DoxyCompactList}\small\item\em Turn on or off wireframe. \end{DoxyCompactList}\item 
+void \hyperlink{class_render_ab498aa4c187f5c3d4e1479b94d86f161}{bind\-Tex} (\hyperlink{class_texture}{Texture} \&tex)
+\begin{DoxyCompactList}\small\item\em bind a texture \end{DoxyCompactList}\item 
+void \hyperlink{class_render_a05951fdb27e9ad1fbc28be2c682aaf12}{set\-Colour} (float R, float G, float B)
+\begin{DoxyCompactList}\small\item\em set the colour for when textures are not ebing used \end{DoxyCompactList}\item 
+void \hyperlink{class_render_a09b3ee0ca3c35661a942ba46d3aedd75}{render} (\hyperlink{class_v_a_o}{V\-A\-O} \&data)
+\begin{DoxyCompactList}\small\item\em render \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The render portion of the \hyperlink{class_render_engine}{Render\-Engine}. 
+
+Takes values from the user like rotation transformation ect and renders them to screen \begin{DoxyAuthor}{Author}
+Umar Badat 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_render_ab498aa4c187f5c3d4e1479b94d86f161}{\index{Render@{Render}!bind\-Tex@{bind\-Tex}}
+\index{bind\-Tex@{bind\-Tex}!Render@{Render}}
+\subsubsection[{bind\-Tex}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-::bind\-Tex (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} \&}]{tex}
+\end{DoxyParamCaption}
+)}}\label{class_render_ab498aa4c187f5c3d4e1479b94d86f161}
+
+
+bind a texture 
+
+Bind a texture for the next model to use as its texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & address of the \hyperlink{class_texture}{Texture}, which will then call the bind function \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_a09b3ee0ca3c35661a942ba46d3aedd75}{\index{Render@{Render}!render@{render}}
+\index{render@{render}!Render@{Render}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-::render (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-A\-O} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_render_a09b3ee0ca3c35661a942ba46d3aedd75}
+
+
+render 
+
+render a \hyperlink{class_v_a_o}{V\-A\-O}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & takes in the address of a \hyperlink{class_v_a_o}{V\-A\-O} and renders it with all the parameters set previously \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this will then reset all the data in previous calls except the wireframe call 
+\end{DoxyNote}
+\hypertarget{class_render_ac4c31c973bb8a82f965cc5a8c8d81f22}{\index{Render@{Render}!rotate@{rotate}}
+\index{rotate@{rotate}!Render@{Render}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-::rotate (
+\begin{DoxyParamCaption}
+\item[{Axis}]{axis, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_render_ac4c31c973bb8a82f965cc5a8c8d81f22}
+
+
+apply a rotation matrix 
+
+Rotate the next rendered object only
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & enum specifying what axis you want to rotate on \\
+\hline
+{\em angle} & float, what is the rotaion angle \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_a05951fdb27e9ad1fbc28be2c682aaf12}{\index{Render@{Render}!set\-Colour@{set\-Colour}}
+\index{set\-Colour@{set\-Colour}!Render@{Render}}
+\subsubsection[{set\-Colour}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-::set\-Colour (
+\begin{DoxyParamCaption}
+\item[{float}]{R, }
+\item[{float}]{G, }
+\item[{float}]{B}
+\end{DoxyParamCaption}
+)}}\label{class_render_a05951fdb27e9ad1fbc28be2c682aaf12}
+
+
+set the colour for when textures are not ebing used 
+
+use a colour
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & red \\
+\hline
+{\em G} & green \\
+\hline
+{\em B} & blue\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000004}{Bug}]this function is currently disabled due to falts in the code \end{DoxyRefDesc}
+\hypertarget{class_render_a425bc40a7f1af78b41bc913ab9613cd4}{\index{Render@{Render}!set\-Wire\-Frame@{set\-Wire\-Frame}}
+\index{set\-Wire\-Frame@{set\-Wire\-Frame}!Render@{Render}}
+\subsubsection[{set\-Wire\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-::set\-Wire\-Frame (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{class_render_a425bc40a7f1af78b41bc913ab9613cd4}
+
+
+Turn on or off wireframe. 
+
+Turn Wire\-Fram on or off
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & true, will turn wire frame on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_a3685dee198801656d82b3597c0995a5f}{\index{Render@{Render}!translate@{translate}}
+\index{translate@{translate}!Render@{Render}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-::translate (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_render_a3685dee198801656d82b3597c0995a5f}
+
+
+translate the next rendered model to that position 
+
+The translation specified will be applied to the next object only
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & float, movement along this axis \\
+\hline
+{\em y} & float, movement along this axis \\
+\hline
+{\em z} & float, movement along this axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Render.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Render.\-cpp\end{DoxyCompactItemize}

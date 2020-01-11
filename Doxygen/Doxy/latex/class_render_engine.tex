@@ -1,0 +1,501 @@
+\hypertarget{class_render_engine}{\section{Render\-Engine Class Reference}
+\label{class_render_engine}\index{Render\-Engine@{Render\-Engine}}
+}
+
+
+\hyperlink{class_render}{Render} Engine.  
+
+
+
+
+{\ttfamily \#include $<$Render\-Engine.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_render_engine_a7bb821d7e18008bd0e5d954d7b56ec6d}{create} (int width, int height, std\-::string name)
+\begin{DoxyCompactList}\small\item\em create the window \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_a547e76ef1a421a3e213a2855d8470e2e}{display} ()
+\begin{DoxyCompactList}\small\item\em swap buffers \end{DoxyCompactList}\item 
+int \hyperlink{class_render_engine_ab7279de663ddad610fae03c3aecdb155}{get\-Width} ()
+\begin{DoxyCompactList}\small\item\em get Width of the window \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_a44f785dafba934d8ab822a1aaf024d9d}{set\-Width} (int w)
+\begin{DoxyCompactList}\small\item\em set the Width of the window \end{DoxyCompactList}\item 
+int \hyperlink{class_render_engine_a04049d5f051357dcf4ac66c2199da2c5}{get\-Height} ()
+\begin{DoxyCompactList}\small\item\em Get the height of the window. \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_ace5627cb71113ce09e681ba2c052af32}{set\-Height} (int h)
+\begin{DoxyCompactList}\small\item\em set the Height of the window \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_acc455c0e6073b67859e5c8343f9634a1}{set\-Title} (std\-::string t)
+\begin{DoxyCompactList}\small\item\em set the title of the window \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_aaac5e48c7d25024cd2ae9d9b86ea2e41}{set\-Win\-Pos} (int x, int y)
+\begin{DoxyCompactList}\small\item\em set window position \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_a8ec2ff634d1b42287cf54c07b2fce7d5}{get\-Win\-Pos} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em get the position of thw window \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_a03173b737d8eb90afe2b2e41ae45782f}{set\-Depth} (bool on)
+\begin{DoxyCompactList}\small\item\em set the depth buffer on or off \end{DoxyCompactList}\item 
+bool \hyperlink{class_render_engine_a7613fd73a0813a595f4683f49bfb6888}{get\-Depth} ()
+\begin{DoxyCompactList}\small\item\em get the depth buffer state (on or off) \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_af7293647c6835d3264a4f6b7aec5d79f}{set\-Lighting} (bool on)
+\begin{DoxyCompactList}\small\item\em set Light \end{DoxyCompactList}\item 
+bool \hyperlink{class_render_engine_ab6509900a3985ed9f48d23afd83f8f73}{get\-Lighting} ()
+\begin{DoxyCompactList}\small\item\em get the state of light \end{DoxyCompactList}\item 
+bool \hyperlink{class_render_engine_a7b9691e101c8faffb68da2ba3ef94e79}{get\-Focus} ()
+\begin{DoxyCompactList}\small\item\em check if the window has focus or not \end{DoxyCompactList}\item 
+\hypertarget{class_render_engine_ac84ced7bed02e9e99166610d593e97ba}{void \hyperlink{class_render_engine_ac84ced7bed02e9e99166610d593e97ba}{update} ()}\label{class_render_engine_ac84ced7bed02e9e99166610d593e97ba}
+
+\begin{DoxyCompactList}\small\item\em update the event calls \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_aa204613d418099a75efb240fb50025b5}{translate} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em apply translation to next render \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_ae848f09c3401e2320d037cf8f1aa41c6}{rotate} (Axis axis, float angle)
+\begin{DoxyCompactList}\small\item\em rotation \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_aef04b2b6db3a023dcf9e92a55098d1ed}{set\-Wire\-Frame} (bool enable)
+\begin{DoxyCompactList}\small\item\em set wireframe \end{DoxyCompactList}\item 
+bool \hyperlink{class_render_engine_a99e16cbcc316fcbcc10df80db224bc2e}{get\-Wire\-Frame} ()
+\begin{DoxyCompactList}\small\item\em get wireframe \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_afa295b21d41e28792bd175bc4792859a}{bind\-Tex} (\hyperlink{class_texture}{Texture} \&tex)
+\begin{DoxyCompactList}\small\item\em use texture \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_a215dfb9663adfe099943c67f70504aaf}{render\-V} (\hyperlink{class_v_a_o}{V\-A\-O} \&data)
+\begin{DoxyCompactList}\small\item\em render object \end{DoxyCompactList}\item 
+void \hyperlink{class_render_engine_afd9aa16bd773fb102d7ee1bd711e4f12}{set\-Camera\-Position} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em set camera position \end{DoxyCompactList}\item 
+float \hyperlink{class_render_engine_aba6e542657290bf6a94cab611066fc3e}{get\-Camera\-Position\-X} ()
+\begin{DoxyCompactList}\small\item\em get camera position \end{DoxyCompactList}\item 
+\hypertarget{class_render_engine_a5ac2b51f09ef60eae4f122c43d94bb8c}{float {\bfseries get\-Camera\-Position\-Y} ()}\label{class_render_engine_a5ac2b51f09ef60eae4f122c43d94bb8c}
+
+\item 
+\hypertarget{class_render_engine_a0cae00fa51bca7f4414dced857b2a909}{float {\bfseries get\-Camera\-Position\-Z} ()}\label{class_render_engine_a0cae00fa51bca7f4414dced857b2a909}
+
+\item 
+\hypertarget{class_render_engine_adfdba922aec083d0731ce8800a18f920}{void {\bfseries set\-Camera\-Focus} (float x, float y, float z)}\label{class_render_engine_adfdba922aec083d0731ce8800a18f920}
+
+\item 
+\hypertarget{class_render_engine_a994459d774d9020bc22286810a2dc6bb}{float {\bfseries get\-Camera\-Focus\-X} ()}\label{class_render_engine_a994459d774d9020bc22286810a2dc6bb}
+
+\item 
+\hypertarget{class_render_engine_a234ae8c0830f7798b08df87f6d2ad88d}{float {\bfseries get\-Camera\-Focus\-Y} ()}\label{class_render_engine_a234ae8c0830f7798b08df87f6d2ad88d}
+
+\item 
+\hypertarget{class_render_engine_a992122db2771284c812713a7e4dfc70c}{float {\bfseries get\-Camera\-Focus\-Z} ()}\label{class_render_engine_a992122db2771284c812713a7e4dfc70c}
+
+\item 
+\hypertarget{class_render_engine_a629a095a7453ad78e9b692e4e9522c64}{void {\bfseries set\-Camera\-Up} (float x, float y, float z)}\label{class_render_engine_a629a095a7453ad78e9b692e4e9522c64}
+
+\item 
+\hypertarget{class_render_engine_a9234c95800b9200a4296c1550c49bf26}{float {\bfseries get\-Camera\-Up\-X} ()}\label{class_render_engine_a9234c95800b9200a4296c1550c49bf26}
+
+\item 
+\hypertarget{class_render_engine_a23f3d39a74df6bdea9f133746af82a9c}{float {\bfseries get\-Camera\-Up\-Y} ()}\label{class_render_engine_a23f3d39a74df6bdea9f133746af82a9c}
+
+\item 
+\hypertarget{class_render_engine_a0e46e46650506b8972038e032835b39b}{float {\bfseries get\-Camera\-Up\-Z} ()}\label{class_render_engine_a0e46e46650506b8972038e032835b39b}
+
+\item 
+\hypertarget{class_render_engine_a4b3a40de0970e9436210076fdfb6eda0}{void {\bfseries set\-Camera\-Mode} (Camera\-::camera\-Mode m)}\label{class_render_engine_a4b3a40de0970e9436210076fdfb6eda0}
+
+\item 
+\hypertarget{class_render_engine_a80c1ba74da94aa68ea3b262f16dbcfbe}{void {\bfseries move\-Camera\-Forward} (float x)}\label{class_render_engine_a80c1ba74da94aa68ea3b262f16dbcfbe}
+
+\item 
+\hypertarget{class_render_engine_add9933a517cc6899cc47edb376675c18}{void {\bfseries move\-Camera\-Left} (float x)}\label{class_render_engine_add9933a517cc6899cc47edb376675c18}
+
+\item 
+\hypertarget{class_render_engine_ac5708ab17601842d4c1740ffffb1efc1}{void {\bfseries move\-Camera\-Up} (float x)}\label{class_render_engine_ac5708ab17601842d4c1740ffffb1efc1}
+
+\item 
+\hypertarget{class_render_engine_ab59b72e8484098100cb81a8a10eb1f46}{void {\bfseries rotate\-Camera\-Up} (float x)}\label{class_render_engine_ab59b72e8484098100cb81a8a10eb1f46}
+
+\item 
+\hypertarget{class_render_engine_aab2507d056198b6c0a1cdce8052c8c7e}{void {\bfseries rotate\-Camera\-Left} (float x)}\label{class_render_engine_aab2507d056198b6c0a1cdce8052c8c7e}
+
+\item 
+\hypertarget{class_render_engine_ab56b031101cd39b934e8a2a1bf1bb578}{void {\bfseries set\-Perspective} (float fov, float ratio, float cnear, float cfar)}\label{class_render_engine_ab56b031101cd39b934e8a2a1bf1bb578}
+
+\item 
+\hypertarget{class_render_engine_a93628cf3d21428f0f6562727335e67fc}{void {\bfseries set\-Ortho2\-D} (float left, float right, float down, float up)}\label{class_render_engine_a93628cf3d21428f0f6562727335e67fc}
+
+\item 
+\hypertarget{class_render_engine_a17af2e852997b7d7a8f126e4223f54d2}{void {\bfseries Ortho2\-D\-Begin} ()}\label{class_render_engine_a17af2e852997b7d7a8f126e4223f54d2}
+
+\item 
+\hypertarget{class_render_engine_a20191c71cb16bd08e0052a9b3088701f}{void {\bfseries Ortho2\-D\-End} ()}\label{class_render_engine_a20191c71cb16bd08e0052a9b3088701f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_render}{Render} Engine. 
+
+Brings all of the render components together \begin{DoxyAuthor}{Author}
+Umar Badat 
+
+
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_render_engine_afa295b21d41e28792bd175bc4792859a}{\index{Render\-Engine@{Render\-Engine}!bind\-Tex@{bind\-Tex}}
+\index{bind\-Tex@{bind\-Tex}!RenderEngine@{Render\-Engine}}
+\subsubsection[{bind\-Tex}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::bind\-Tex (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture} \&}]{tex}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_afa295b21d41e28792bd175bc4792859a}
+
+
+use texture 
+
+bind this texture to the next render object
+
+
+\begin{DoxyParams}{Parameters}
+{\em tex} & address of a \hyperlink{class_texture}{Texture} object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_a7bb821d7e18008bd0e5d954d7b56ec6d}{\index{Render\-Engine@{Render\-Engine}!create@{create}}
+\index{create@{create}!RenderEngine@{Render\-Engine}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a7bb821d7e18008bd0e5d954d7b56ec6d}
+
+
+create the window 
+
+Create a \hyperlink{class_window}{Window} with the valuse specified
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & int width of the window \\
+\hline
+{\em height} & int height of the window \\
+\hline
+{\em name} & the name that appears on the window \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_a547e76ef1a421a3e213a2855d8470e2e}{\index{Render\-Engine@{Render\-Engine}!display@{display}}
+\index{display@{display}!RenderEngine@{Render\-Engine}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a547e76ef1a421a3e213a2855d8470e2e}
+
+
+swap buffers 
+
+display all the gl calls to the window \hypertarget{class_render_engine_aba6e542657290bf6a94cab611066fc3e}{\index{Render\-Engine@{Render\-Engine}!get\-Camera\-Position\-X@{get\-Camera\-Position\-X}}
+\index{get\-Camera\-Position\-X@{get\-Camera\-Position\-X}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Camera\-Position\-X}]{\setlength{\rightskip}{0pt plus 5cm}float Render\-Engine\-::get\-Camera\-Position\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_aba6e542657290bf6a94cab611066fc3e}
+
+
+get camera position 
+
+Get the camera's x coordinate \begin{DoxyReturn}{Returns}
+float x 
+\end{DoxyReturn}
+\hypertarget{class_render_engine_a7613fd73a0813a595f4683f49bfb6888}{\index{Render\-Engine@{Render\-Engine}!get\-Depth@{get\-Depth}}
+\index{get\-Depth@{get\-Depth}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}bool Render\-Engine\-::get\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a7613fd73a0813a595f4683f49bfb6888}
+
+
+get the depth buffer state (on or off) 
+
+\begin{DoxyReturn}{Returns}
+bool, true if it is on 
+\end{DoxyReturn}
+\hypertarget{class_render_engine_a7b9691e101c8faffb68da2ba3ef94e79}{\index{Render\-Engine@{Render\-Engine}!get\-Focus@{get\-Focus}}
+\index{get\-Focus@{get\-Focus}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Focus}]{\setlength{\rightskip}{0pt plus 5cm}bool Render\-Engine\-::get\-Focus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a7b9691e101c8faffb68da2ba3ef94e79}
+
+
+check if the window has focus or not 
+
+\begin{DoxyReturn}{Returns}
+true if the window is currently selected 
+\end{DoxyReturn}
+\hypertarget{class_render_engine_a04049d5f051357dcf4ac66c2199da2c5}{\index{Render\-Engine@{Render\-Engine}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Render\-Engine\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a04049d5f051357dcf4ac66c2199da2c5}
+
+
+Get the height of the window. 
+
+\begin{DoxyReturn}{Returns}
+int height 
+\end{DoxyReturn}
+\hypertarget{class_render_engine_ab6509900a3985ed9f48d23afd83f8f73}{\index{Render\-Engine@{Render\-Engine}!get\-Lighting@{get\-Lighting}}
+\index{get\-Lighting@{get\-Lighting}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Lighting}]{\setlength{\rightskip}{0pt plus 5cm}bool Render\-Engine\-::get\-Lighting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_ab6509900a3985ed9f48d23afd83f8f73}
+
+
+get the state of light 
+
+Get the current state of light \begin{DoxyReturn}{Returns}
+bool true = on false = off 
+\end{DoxyReturn}
+\hypertarget{class_render_engine_ab7279de663ddad610fae03c3aecdb155}{\index{Render\-Engine@{Render\-Engine}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Render\-Engine\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_ab7279de663ddad610fae03c3aecdb155}
+
+
+get Width of the window 
+
+\begin{DoxyReturn}{Returns}
+int width of the window 
+\end{DoxyReturn}
+\hypertarget{class_render_engine_a8ec2ff634d1b42287cf54c07b2fce7d5}{\index{Render\-Engine@{Render\-Engine}!get\-Win\-Pos@{get\-Win\-Pos}}
+\index{get\-Win\-Pos@{get\-Win\-Pos}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Win\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::get\-Win\-Pos (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a8ec2ff634d1b42287cf54c07b2fce7d5}
+
+
+get the position of thw window 
+
+Get the position of the window on screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & address of x is assigned the window position \\
+\hline
+{\em y} & address of y is assigned the window position \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_a99e16cbcc316fcbcc10df80db224bc2e}{\index{Render\-Engine@{Render\-Engine}!get\-Wire\-Frame@{get\-Wire\-Frame}}
+\index{get\-Wire\-Frame@{get\-Wire\-Frame}!RenderEngine@{Render\-Engine}}
+\subsubsection[{get\-Wire\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool Render\-Engine\-::get\-Wire\-Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a99e16cbcc316fcbcc10df80db224bc2e}
+
+
+get wireframe 
+
+get the wireframe condition \hypertarget{class_render_engine_a215dfb9663adfe099943c67f70504aaf}{\index{Render\-Engine@{Render\-Engine}!render\-V@{render\-V}}
+\index{render\-V@{render\-V}!RenderEngine@{Render\-Engine}}
+\subsubsection[{render\-V}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::render\-V (
+\begin{DoxyParamCaption}
+\item[{{\bf V\-A\-O} \&}]{data}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a215dfb9663adfe099943c67f70504aaf}
+
+
+render object 
+
+Take in a \hyperlink{class_v_a_o}{V\-A\-O} and render it using the values specified before
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & address of a \hyperlink{class_v_a_o}{V\-A\-O} to render \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_ae848f09c3401e2320d037cf8f1aa41c6}{\index{Render\-Engine@{Render\-Engine}!rotate@{rotate}}
+\index{rotate@{rotate}!RenderEngine@{Render\-Engine}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::rotate (
+\begin{DoxyParamCaption}
+\item[{Axis}]{axis, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_ae848f09c3401e2320d037cf8f1aa41c6}
+
+
+rotation 
+
+rotation on a certain axis depending on axis
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & and enum specifying the rotation axis \\
+\hline
+{\em angle} & what angle do you want to rotate at \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_afd9aa16bd773fb102d7ee1bd711e4f12}{\index{Render\-Engine@{Render\-Engine}!set\-Camera\-Position@{set\-Camera\-Position}}
+\index{set\-Camera\-Position@{set\-Camera\-Position}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Camera\-Position (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_afd9aa16bd773fb102d7ee1bd711e4f12}
+
+
+set camera position 
+
+Takes three floats and sets the camera's position in the world
+
+
+\begin{DoxyParams}{Parameters}
+{\em floats} & representing the camera coordinates \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_a03173b737d8eb90afe2b2e41ae45782f}{\index{Render\-Engine@{Render\-Engine}!set\-Depth@{set\-Depth}}
+\index{set\-Depth@{set\-Depth}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Depth (
+\begin{DoxyParamCaption}
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a03173b737d8eb90afe2b2e41ae45782f}
+
+
+set the depth buffer on or off 
+
+\mbox{[}long description\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & true to turn the depth buffer on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_ace5627cb71113ce09e681ba2c052af32}{\index{Render\-Engine@{Render\-Engine}!set\-Height@{set\-Height}}
+\index{set\-Height@{set\-Height}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{h}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_ace5627cb71113ce09e681ba2c052af32}
+
+
+set the Height of the window 
+
+sets the height of the window \hypertarget{class_render_engine_af7293647c6835d3264a4f6b7aec5d79f}{\index{Render\-Engine@{Render\-Engine}!set\-Lighting@{set\-Lighting}}
+\index{set\-Lighting@{set\-Lighting}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Lighting}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Lighting (
+\begin{DoxyParamCaption}
+\item[{bool}]{on}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_af7293647c6835d3264a4f6b7aec5d79f}
+
+
+set Light 
+
+set light on or off with true being on
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & boolean true for on false for off \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_acc455c0e6073b67859e5c8343f9634a1}{\index{Render\-Engine@{Render\-Engine}!set\-Title@{set\-Title}}
+\index{set\-Title@{set\-Title}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Title}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Title (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_acc455c0e6073b67859e5c8343f9634a1}
+
+
+set the title of the window 
+
+set the name or title of the window \hypertarget{class_render_engine_a44f785dafba934d8ab822a1aaf024d9d}{\index{Render\-Engine@{Render\-Engine}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{w}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_a44f785dafba934d8ab822a1aaf024d9d}
+
+
+set the Width of the window 
+
+sets the width of the window \hypertarget{class_render_engine_aaac5e48c7d25024cd2ae9d9b86ea2e41}{\index{Render\-Engine@{Render\-Engine}!set\-Win\-Pos@{set\-Win\-Pos}}
+\index{set\-Win\-Pos@{set\-Win\-Pos}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Win\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Win\-Pos (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_aaac5e48c7d25024cd2ae9d9b86ea2e41}
+
+
+set window position 
+
+Set the window position on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int x position \\
+\hline
+{\em y} & int y position \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_aef04b2b6db3a023dcf9e92a55098d1ed}{\index{Render\-Engine@{Render\-Engine}!set\-Wire\-Frame@{set\-Wire\-Frame}}
+\index{set\-Wire\-Frame@{set\-Wire\-Frame}!RenderEngine@{Render\-Engine}}
+\subsubsection[{set\-Wire\-Frame}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::set\-Wire\-Frame (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_aef04b2b6db3a023dcf9e92a55098d1ed}
+
+
+set wireframe 
+
+set the wireframe to true or false
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & true = turn on wireframe \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_render_engine_aa204613d418099a75efb240fb50025b5}{\index{Render\-Engine@{Render\-Engine}!translate@{translate}}
+\index{translate@{translate}!RenderEngine@{Render\-Engine}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Render\-Engine\-::translate (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_render_engine_aa204613d418099a75efb240fb50025b5}
+
+
+apply translation to next render 
+
+Apply this translation to the next render
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & translation across x \\
+\hline
+{\em y} & translation across y \\
+\hline
+{\em z} & translation across z \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Render\-Engine.\-h\item 
+E\-:/\-G\-R\-A\-B\-L\-A\-U\-R\-G/\-I\-S\-E/\-I\-S\-E-\/\-Demo/\-I\-S\-E-\/\-Demo/Render\-Engine.\-cpp\end{DoxyCompactItemize}
